@@ -3,7 +3,7 @@ import 'pliny/search/algolia.css'
 
 import { Space_Grotesk } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from '@vercel/speed-insights/next'
 // import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchProvider, SearchConfig } from 'pliny/search'
 import Header from '@/components/Header'
