@@ -1,6 +1,6 @@
-![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
-
 # Tailwind Nextjs Starter Blog
+
+![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/timlrx/tailwind-nextjs-starter-blog?style=social)](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/timlrx/tailwind-nextjs-starter-blog?style=social)](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog/network/)
@@ -134,11 +134,6 @@ I wanted it to be nearly as feature-rich as popular blogging templates like [bea
 ## Quick Start Guide
 
 1. Clone the repo
-
-```bash
-npx degit 'timlrx/tailwind-nextjs-starter-blog'
-```
-
 2. Personalize `siteMetadata.js` (site related information)
 3. Modify the content security policy in `next.config.js` if you want to use
    other analytics provider or a commenting solution other than giscus.
@@ -209,7 +204,7 @@ Frontmatter follows [Hugo's standards](https://gohugo.io/content-management/fron
 
 Please refer to `contentlayer.config.ts` for an up to date list of supported fields. The following fields are supported:
 
-```
+```txt
 title (required)
 date (required)
 tags (optional)
@@ -224,7 +219,7 @@ canonicalUrl (optional, canonical url for the post for SEO)
 
 Here's an example of a post's frontmatter:
 
-```
+```mdx
 ---
 title: 'Introducing Tailwind Nexjs Starter Blog'
 date: '2021-01-12'

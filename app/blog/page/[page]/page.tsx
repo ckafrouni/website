@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation'
 import ListLayout from '@/layouts/ListLayoutWithTags'
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
 import { allBlogs } from 'contentlayer/generated'
@@ -18,6 +19,11 @@ export default function Page({ params }: { params: { page: string } }) {
     POSTS_PER_PAGE * (pageNumber - 1),
     POSTS_PER_PAGE * pageNumber
   )
+
+  if (initialDisplayPosts.length === 0 || pageNumber < 1) {
+    return notFound()
+  }
+
   const pagination = {
     currentPage: pageNumber,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
